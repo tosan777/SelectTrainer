@@ -1,6 +1,50 @@
-<h1>Home#index</h1>
-<%= link_to 'ログアウト', 
-  destroy_user_session_path,
-  class: 'dropdown-item',
-  method: :delete
-%>
+<header class="header">
+  <div class="header__logo-wrap">
+    <i class="fa-brands fa-drupal"></i>
+  </div>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__list-item">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </li>
+      <li class="nav__list-item">
+        <i class="fa-solid fa-bell"></i>
+      </li>
+      <li class="nav__list-item">
+        <i class="fa-solid fa-star"></i>
+      </li>
+      <li class="nav__list-item">
+        <i class="fa-solid fa-user-alien"></i>
+      </li>
+      <%= link_to 'ログアウト', 
+        destroy_user_session_path,
+        class: 'nav__list-item',
+        method: :delete
+      %>
+    </ul>
+  </nav>
+</header>
+
+<div class="index__wrap">
+
+  <div class="slider__wrap">
+    <ul class="slider__list">
+      <li class="slider__item">
+        <img src="https://placehold.jp/300x200.png" alt="" class="slider__img">
+      </li>
+      <li class="slider__item">
+        <img src="https://placehold.jp/300x200.png" alt="" class="slider__img">
+      </li>
+      <li class="slider__item">
+        <img src="https://placehold.jp/300x200.png" alt="" class="slider__img">
+      </li>
+    </ul>
+  </div>
+
+  <div class="index__box">
+    <div class="index__serch-wrap">
+    </div>
+    <div class="index__trainer-wrap"></div>
+  </div>
+</div>
+
