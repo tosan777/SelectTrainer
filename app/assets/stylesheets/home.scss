@@ -67,28 +67,28 @@
   }
 }
 
-/* index__wrap */
-.index {
+/* root */
+.root {
 
   &__box {
     display: flex;
     justify-content: space-between;
   }
 
-  &__serch {
-
-    &-wrap {
+  .search {
+    &__wrap {
       width: 300px;
       height: 100vh;
       background-color: #f0f0f0;
     }
   }
 
-  &__trainer {
-    &-wrap {
+  .trainer {
+    &__wrap {
       width: 1000px;
       height: 100vh;
       background-color: #f0f0f0;
     }
   }
+
 }
